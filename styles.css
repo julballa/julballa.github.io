@@ -69,7 +69,7 @@ span.publication {
 
 #intro > img, div.card > img {
     border: 1px solid var(--accent-dark);
-    height: fit-content;
+    height: auto;
     margin-right: 2rem;
 }
 
