@@ -79,7 +79,7 @@ span.publication {
 
 #intro, div.card {
     display: flex;
-    align-items: top;
+    align-items: center;
 }
 
 #intro > img {
@@ -137,14 +137,14 @@ div.card p {
     margin-bottom: 0;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 900px) {
     #intro, div.card {
         flex-direction: column;
     }
     
     #intro > img, div.card > img {
         margin-inline: auto;
-        max-width: min(90%, 300px);
+        max-width: min(90%, 200px);
         margin-bottom: 1rem;
     }
 }
