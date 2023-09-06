@@ -55,6 +55,10 @@ a {
     color: var(--accent-colour);
 }
 
+a:hover {
+    filter: brightness(0.8); 
+}
+
 section p {
     margin-block: -5px 1.3rem;
 }
@@ -75,11 +79,11 @@ span.publication {
 
 #intro, div.card {
     display: flex;
-    align-items: center;
+    align-items: top;
 }
 
 #intro > img {
-   max-width: 33%;
+   max-width: 30%;
    border-radius: 0.5rem;
 }
 
@@ -143,4 +147,23 @@ div.card p {
         max-width: min(90%, 300px);
         margin-bottom: 1rem;
     }
+}
+
+
+.cv-icon {
+    display: inline-block;
+    width: 24px; 
+    height: 20px; 
+    background-color: #ffffff; 
+    border: 1px solid var(--accent-colour); 
+    text-align: center;
+    line-height: 23px; 
+    font-size: 15px; 
+    color:  var(--accent-colour); 
+    text-decoration: none;
+}
+
+.cv-icon:hover {
+    color:   #ffffff; 
+    background-color: var(--accent-colour); 
 }
