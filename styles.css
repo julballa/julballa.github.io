@@ -30,7 +30,7 @@ body {
 
 main {
     position: relative;
-    max-width: min(90ch, 80%);
+    max-width: min(100ch, 80%);
     margin-inline:auto;
     margin-block: 2rem 4rem;
     background-color: white;
@@ -53,6 +53,7 @@ h1, h2, h3 {
 
 a {
     color: var(--accent-colour);
+    text-decoration: none;
 }
 
 a:hover {
@@ -65,6 +66,7 @@ section p {
 
 span.baller {
     font-weight: 500;
+    text-decoration: underline;
 }
 
 span.publication {
@@ -83,7 +85,7 @@ span.publication {
 }
 
 #intro > img {
-   max-width: 30%;
+   max-width: 23%;
    border-radius: 0.5rem;
 }
 
@@ -129,7 +131,7 @@ div.card > img {
 }
 
 div.card h3 {
-    font-size: 1rem;
+    font-size: 1.05rem;
     margin-block: 0 0.5rem;
 }
 
@@ -166,4 +168,9 @@ div.card p {
 .cv-icon:hover {
     color:   #ffffff; 
     background-color: var(--accent-colour); 
+}
+
+mark.blue {
+    color:#8a0281;
+    background: none;
 }
