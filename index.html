@@ -24,7 +24,7 @@
         <div>
             <h1>Julia Balla</h1>
             <p>
-                I am a third-year PhD student at <a href="https://www.eecs.mit.edu">MIT EECS</a> co-advised by Professors <a href="https://blondegeek.github.io">Tess Smidt</a> and <a href="http://people.csail.mit.edu/tommi/">Tommi Jaakkola</a>. . My research focuses on understanding how structure in data should inform the design of machine learning methods, particularly in the context of generative modeling and AI for scientific discovery. I am supported by the <a href="https://ndseg.org/">NDSEG Fellowship</a>.
+                I am a third-year PhD student at <a href="https://www.eecs.mit.edu">MIT EECS</a> co-advised by Professors <a href="https://blondegeek.github.io">Tess Smidt</a> and <a href="http://people.csail.mit.edu/tommi/">Tommi Jaakkola</a>. My research focuses on understanding how structure in data should inform the design of machine learning methods, particularly in the context of generative modeling and AI for scientific discovery. I am supported by the <a href="https://ndseg.org/">NDSEG Fellowship</a>.
             </p>
             <p>
                 Previously, I completed my M.S. in Computer Science at the University of Oxford as a <a href="https://www.deepmind.com/scholarships">DeepMind scholar</a> and my B.S. in Mathematics with Computer Science at MIT.
@@ -40,12 +40,17 @@
     </section>
 
     <p class="announcement">
-        Our new blog post on tokenization for non-sequential data was accepted to the ICLR 2026 Blog Post Track!
-        <a href="https://iclr-blogposts.github.io/2026/blog/2026/autoregressive-tokenization/" target="_blank" rel="noopener noreferrer">[read post]</a>
+        Our <a href="https://iclr-blogposts.github.io/2026/blog/2026/autoregressive-tokenization/" target="_blank" rel="noopener noreferrer">new blog post</a> on tokenization for non-sequential data was accepted to the ICLR 2026 Blog Post Track!
     </p>
     
-    <section class="portfolio">
-        <h2>Publications</h2>
+    <div class="tabs" role="tablist" aria-label="Content sections">
+        <button class="tab-button active" id="tab-publications" role="tab" aria-controls="panel-publications" aria-selected="true" data-tab="panel-publications">Publications</button>
+        <button class="tab-button" id="tab-blog-posts" role="tab" aria-controls="panel-blog-posts" aria-selected="false" data-tab="panel-blog-posts">Blog Posts</button>
+        <button class="tab-button" id="tab-teaching" role="tab" aria-controls="panel-teaching" aria-selected="false" data-tab="panel-teaching">Teaching</button>
+        <button class="tab-button" id="tab-misc-projects" role="tab" aria-controls="panel-misc-projects" aria-selected="false" data-tab="panel-misc-projects">Misc Projects</button>
+    </div>
+
+    <section class="portfolio tab-panel active" id="panel-publications" role="tabpanel" aria-labelledby="tab-publications">
         <div class="card">
             <img src='images/turbulence.png'>
             <div>
@@ -104,13 +109,12 @@
         </div>
     </section>
     
-    <section class="portfolio">
-        <h2>Teaching</h2>
+    <section class="portfolio tab-panel" id="panel-teaching" role="tabpanel" aria-labelledby="tab-teaching" hidden>
         <div class="card">
             <img src='images/gameoflife.png'>
             <div>
                 <h3>C15061: The Mathematics of Multi-Agent Systems</h3>
-                <p>I co-taught a lecture series on reinforcement learning, behavioral economics, and complex systems to high schoolers at <a href="https://esp.mit.edu/learn/HSSP/index.html">MIT HSSP</a>
+                <p>I co-taught a lecture series on reinforcement learning, behavioral economics, and complex systems to high schoolers at <a href="https://esp.mit.edu/learn/HSSP/index.html">MIT HSSP</a>.
                 <br><a href="https://mit-momas.github.io/">[website]</a></p>
             </div>
         </div>
@@ -124,22 +128,41 @@
         </div>
     </section>
     
-    <section class="portfolio">
-        <h2>Miscellaneous projects</h2>
+    <section class="portfolio tab-panel" id="panel-blog-posts" role="tabpanel" aria-labelledby="tab-blog-posts" hidden>
         <div class="card">
-            <img src='images/rewiring.png'>
+            <img src='images/square_peg.png'>
             <div>
-                <h3>Benchmarking Graph Rewiring Techniques for Graph Attention Networks</h3>
-                <p>Mini-project for the Graph Representation Learning course at Oxford.
-                <br><a href="files/gat_rewiring.pdf">[paper]</a> <a href="https://github.com/julballa/gat_rewiring">[code]</a></p>
+                <h3>Square Peg, Round Hole: Plugging Non-Sequential Data into Sequential Language Models</h3>
+                <p>Exploring the emerging landscape of techniques for turning non-sequential data into 1D sequences, which autoregressive models are designed to process.
+                <br><span class="publication">ICLR Blog Post Track 2026</span>
+                <br><a href="https://iclr-blogposts.github.io/2026/blog/2026/autoregressive-tokenization/">[post]</a></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src='images/erdos.png'>
+            <div>
+                <h3>What’s the Erdős Number of an LLM?</h3>
+                <p>Algorithmic and mathematical discovery with machine learning.
+                <br><a href="https://medium.com/@peterholderrieth/whats-the-erd%C5%91s-number-of-an-llm-9f09665da92d">[post]</a></p>
             </div>
         </div>
         <div class="card">
             <img src='images/oversquashing.png'>
             <div>
                 <h3>Over-squashing in Graph Neural Networks</h3>
-                <p>Final blog post for MIT 6.S898: Deep Learning.
+                <p>Intro to over-squashing, its relation to other measures of information loss in GNNs, and some proposed solutions.
                 <br><a href="https://julballa.github.io/6s898-final-blog/blog/">[post]</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio tab-panel" id="panel-misc-projects" role="tabpanel" aria-labelledby="tab-misc-projects" hidden>
+        <div class="card">
+            <img src='images/rewiring.png'>
+            <div>
+                <h3>Benchmarking Graph Rewiring Techniques for Graph Attention Networks</h3>
+                <p>Mini-project for the Graph Representation Learning course at Oxford.
+                <br><a href="files/gat_rewiring.pdf">[paper]</a> <a href="https://github.com/julballa/gat_rewiring">[code]</a></p>
             </div>
         </div>
         <div class="card">
@@ -153,6 +176,32 @@
     </section>
     
     </main>
+
+    <script>
+        const tabButtons = document.querySelectorAll(".tab-button");
+        const tabPanels = document.querySelectorAll(".tab-panel");
+
+        function activateTab(panelId) {
+            tabButtons.forEach((button) => {
+                const isActive = button.dataset.tab === panelId;
+                button.classList.toggle("active", isActive);
+                button.setAttribute("aria-selected", isActive ? "true" : "false");
+                button.setAttribute("tabindex", isActive ? "0" : "-1");
+            });
+
+            tabPanels.forEach((panel) => {
+                const isActive = panel.id === panelId;
+                panel.classList.toggle("active", isActive);
+                panel.hidden = !isActive;
+            });
+        }
+
+        tabButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                activateTab(button.dataset.tab);
+            });
+        });
+    </script>
     
 </body>
 </html>
